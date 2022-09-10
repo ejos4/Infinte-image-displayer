@@ -53,6 +53,7 @@ function makeImageListPromise(number, url) {
 }
 
 function loadImages(number, url = randomImageURL) {
+    loaderElt.style.display = 'block';
     makeImageListPromise(number, url)
         .then((imgList) => {
             loaderElt.style.display = 'none';
